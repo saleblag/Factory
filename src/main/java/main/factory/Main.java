@@ -21,15 +21,27 @@ public class Main {
         String message = "Ovo je poruka";
         
         Car fiat = new Car();
-        fiat.model = "Fiat Punto";
-        fiat.buildYear = 2010;
-        fiat.color = "black";
-        fiat.consumption = 6;
-        fiat.maxSpeed = 180;
-        fiat.currentFuel = 20;
-        fiat.maxFuel = 45;
+        fiat.setModel("Fiat Punto");
+        fiat.setBuildYear(2010);
+        fiat.setColor("black");
+        fiat.setMaxFuel(45);
+        fiat.setConsumption(6);
+        fiat.setCurrentFuel(20);
         
-        System.out.println("Model: " + fiat.model);
+        
+        fiat.showData();
+        
+        Car ford = new Car();
+        ford.setModel("Ford Fiesta");
+        ford.setBuildYear(2015);
+        
+        ford.showData();
+        
+        System.out.println("Model: " + ford.getModel());
+        
+       
+       
     }
+    
     
 }
